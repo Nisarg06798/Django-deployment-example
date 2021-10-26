@@ -1,0 +1,8 @@
+{% extends 'basic_app/base.html' %}
+    {% block body_block %}
+        {% if user.is_authenticated %}
+            <h1>Loggin succesfull</h1>
+        {% else %}
+            <h2>Please Register or Login</h2>
+        {% endif %}
+    {% endblock %}
